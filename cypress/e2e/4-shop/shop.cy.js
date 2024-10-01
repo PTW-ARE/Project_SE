@@ -49,7 +49,7 @@ describe('shop', () => {
 
     })
 
-    it('tc-04', () => {
+    it('tc-03', () => {
 
         cy.wait(3000)
         cy.get('.jumbotron-large > a > .jumbotron-box > :nth-child(3)').click()
