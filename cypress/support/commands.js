@@ -24,12 +24,6 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-Cypress.Commands.add('login', (username, password) => {
-    cy.get('#username').type(username)
-    cy.get('#password').type(password)
-    cy.get('#submit').click()
-})
-
 Cypress.Commands.add('shop', (firstname, lastname,address1,address2,addressCity,addressZipcode,phone) => {
     cy.get('#firstname').type(firstname)
     cy.get('#lastname').type(lastname)
