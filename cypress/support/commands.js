@@ -29,3 +29,13 @@ Cypress.Commands.add('login', (username, password) => {
     cy.get('#password').type(password)
     cy.get('#submit').click()
 })
+
+Cypress.Commands.add('shop', (firstname, lastname,address1,address2,addressCity,addressZipcode,phone) => {
+    cy.get('#firstname').type(firstname)
+    cy.get('#lastname').type(lastname)
+    cy.get('#address1').type(address1)
+    cy.get('#address2').type(address2)
+    cy.get('#addressCity').type(addressCity)
+    cy.get('#addressZipcode').type(addressZipcode)
+    cy.get('#phone').type(phone)
+})
