@@ -24,12 +24,20 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-Cypress.Commands.add('shop', (firstname, lastname,address1,address2,addressCity,addressZipcode,phone) => {
-    cy.get('#firstname').type(firstname)
-    cy.get('#lastname').type(lastname)
-    cy.get('#address1').type(address1)
-    cy.get('#address2').type(address2)
-    cy.get('#addressCity').type(addressCity)
-    cy.get('#addressZipcode').type(addressZipcode)
-    cy.get('#phone').type(phone)
+Cypress.Commands.add('account', (firstname, lastname,address1,address2,email,zip,phone,city,state,country) => {
+    cy.get(':nth-child(1) > :nth-child(2) > input').type(firstname)
+    cy.get(':nth-child(4) > tbody > :nth-child(2) > :nth-child(2) > input').type(lastname)
+    cy.get(':nth-child(4) > tbody > :nth-child(3) > :nth-child(2) > input').type(email)
+    cy.get(':nth-child(4) > tbody > :nth-child(4) > :nth-child(2) > input').type(phone)
+    cy.get(':nth-child(5) > :nth-child(2) > input').type(address1)
+    cy.get(':nth-child(6) > :nth-child(2) > input').type(address2)
+    cy.get(':nth-child(7) > :nth-child(2) > input').type(city)
+    cy.get(':nth-child(8) > :nth-child(2) > input').type(state)
+    cy.get(':nth-child(9) > :nth-child(2) > input').type(zip)
+    cy.get(':nth-child(10) > :nth-child(2) > input').type(country)
+})
+
+Cypress.Commands.add('test', (Username,Password) => {
+    cy.get('#username').type(Username)
+    cy.get('#password').type(Password)
 })

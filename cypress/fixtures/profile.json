@@ -1,10 +1,13 @@
 {
     "firstname": "Pothiwat",
     "lastname": "Chaisena",
+    "email" : "pothiwat.ptw@gmail.com",
     "address1":"888/999 30th street",
     "address2": "-",
-    "addressCity":"Hatyai",
-    "addressZipcode":"90110",
-    "phone":"0123456789"
+    "city":"Hatyai",
+    "zip":"90110",
+    "phone":"0123456789",
+    "state": "Sonkhla",
+    "country": "Thailand"
   }
   
