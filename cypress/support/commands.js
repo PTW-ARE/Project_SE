@@ -24,7 +24,7 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-Cypress.Commands.add('account', (firstname, lastname,address1,address2,email,zip,phone,city,state,country) => {
+Cypress.Commands.add('pet', (firstname, lastname,address1,address2,email,zip,phone,city,state,country) => {
     cy.get(':nth-child(1) > :nth-child(2) > input').type(firstname)
     cy.get(':nth-child(4) > tbody > :nth-child(2) > :nth-child(2) > input').type(lastname)
     cy.get(':nth-child(4) > tbody > :nth-child(3) > :nth-child(2) > input').type(email)

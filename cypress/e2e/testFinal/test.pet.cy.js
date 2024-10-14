@@ -1,4 +1,4 @@
-describe('shop', () => {
+describe('pet', () => {
 
     beforeEach(()=> {
         cy.viewport(1500, 1500)
@@ -10,7 +10,7 @@ describe('shop', () => {
     it.only('tc-Edit-Account', () => {
     
         cy.wait(3000)
-        cy.account(
+        cy.pet(
             testDataProfile.firstname,
             testDataProfile.lastname,
             testDataProfile.email,
